@@ -8,7 +8,7 @@ public class LunchService {
     // 저장한다.
     public void writeLunch(List<Lunch> lunchList) {
         try (ObjectOutputStream oos = new ObjectOutputStream(
-            new FileOutputStream("/Users/junghunmok/Desktop/serial/lunch.txt"))) {  // 여기에 lunch 텍스트 파일이 없으면 자동 생성한다.
+            new FileOutputStream("/Users/junghunmok/Desktop/serial/lunch.txt"))) {  // 여기에 lunch 텍스트 파일이 없으면 자동 생성한다. 본인 로컬 입니다.
             oos.writeObject(lunchList); // 리스트 전체 저장
         } catch (Exception e) {
             e.printStackTrace();
